@@ -2,21 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=\, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <form id="postContainer">
-    <label for="post_title">POST TITLE:</label><br>
-    <input type="text" id="ptitle" name="post-title"><br>
-    <label for="post-content">POST CONTENT:</label><br>
-    <textarea id="pcontent" rows="4" cols="50" name="comment"></textarea>
-    <input type="submit" id="submit" value="Submit">
-    <script src="script.js"></script>
-  </form>
-</body>
+    <div class="container mt-5">
+    <p id="errorMsg" class="text-danger"></p>
+    <input type="text" id="title" class="form-control mb-2" placeholder="Post Title">
+    <textarea id="content" class="form-control mb-2" placeholder="Post Content"></textarea>
+    <button id="submitBtn" class="btn btn-success mb-3">Submit</button>
+    <ul id="parentList" class="list-group"></ul>
 
+</div>
+    
+</body>
 </html>
